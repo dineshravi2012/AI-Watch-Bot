@@ -5,12 +5,14 @@ channels:
 dependencies:
   - python=3.8.*  # Specify the Python version
   - streamlit=1.39.0  # Optionally add a version, e.g., streamlit=0.87.0
-  - snowflake-connector-python  # Install with conda
+  - snowflake-connector-python   # Install with conda
   - snowflake-snowpark-python
   - snowflake-ml-python
-  - beautifulsoup4
+  - watchdog=5.0.3
+  - pandas=2.2.3
   - pip  # Ensure pip is installed for anything not available on conda
   - pip:
       - snowflake-ml-python  # If not available via conda, install via pip
-      - beautifulsoup4
+      - watchdog
+      - pandas 
 
